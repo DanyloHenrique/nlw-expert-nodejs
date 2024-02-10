@@ -1,0 +1,17 @@
+meta {
+  name: vote on poll
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/polls/08495969-c4c5-4992-9c6a-f7dd6f7ad07e/votes
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "pollOptionId": "fa6a5606-293c-4d45-a582-4bb44c992cff"
+  }
+}
